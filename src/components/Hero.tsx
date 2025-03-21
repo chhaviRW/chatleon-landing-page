@@ -41,17 +41,16 @@ const Hero = () => {
             <div className="pill-tag mb-6">AI - LEADERSHIP - TRAINING FOR BUSINESS GROWTH</div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-              Transform Your Business <br />
-              <span className="bg-clip-text text-transparent bg-gradient-blue">With AI Strategy</span>
+              AI - LEADERSHIP - TRAINING FOR BUSINESS GROWTH
             </h1>
             
             <div className="space-y-6 mb-8">
               <p className="text-lg md:text-xl text-muted-foreground">
-                Master AI strategy and implementation with executive AI training led by industry experts from RandomWalk.
+                Master AI strategy and implementation with executive AI training Program led by industry experts from RandomWalk.
               </p>
               
               <p className="text-lg md:text-xl text-muted-foreground">
-                Gain hands-on experience with the best AI course tailored for business leaders, covering AI skills, analytics, and conversion optimization.
+                Gain hands-on experience with the best AI course tailored for business leaders, explore AI tools and gain hands-on experience with AI and future AI-driven initiatives within your organization.
               </p>
               
               <p className="text-xl font-medium">

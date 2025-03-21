@@ -1,6 +1,5 @@
 
 import React, { useEffect } from 'react';
-import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import ProgramStats from '@/components/ProgramStats';
 import ClienteleSection from '@/components/ClienteleSection';
@@ -48,8 +47,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
       <main>
         <Hero />
         <ProgramStats />
