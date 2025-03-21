@@ -1,31 +1,9 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import { useAnimateInView } from '@/utils/animations';
 
 const ClienteleSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-up');
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
-    );
-    
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
+  const sectionRef = useAnimateInView();
 
   return (
     <section className="py-16 bg-white" ref={sectionRef} style={{ opacity: 0 }}>

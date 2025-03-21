@@ -45,31 +45,6 @@ const Index = () => {
       document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
-  
-  // Page load animations
-  useEffect(() => {
-    // Add animation classes to elements as they appear in viewport
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    
-    document.querySelectorAll('.section-container').forEach(section => {
-      observer.observe(section);
-    });
-    
-    return () => {
-      document.querySelectorAll('.section-container').forEach(section => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">

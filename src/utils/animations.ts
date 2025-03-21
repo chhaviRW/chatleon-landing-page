@@ -6,9 +6,15 @@ export const useIntersectionObserver = (
   options: IntersectionObserverInit = {}
 ) => {
   const observer = useRef<IntersectionObserver | null>(null);
+  const targetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     observer.current = new IntersectionObserver(callback, options);
+    
+    if (targetRef.current) {
+      observer.current.observe(targetRef.current);
+    }
+    
     return () => {
       if (observer.current) {
         observer.current.disconnect();
@@ -16,7 +22,7 @@ export const useIntersectionObserver = (
     };
   }, [callback, options]);
 
-  return observer.current;
+  return targetRef;
 };
 
 export const useAnimateInView = (
@@ -28,8 +34,12 @@ export const useAnimateInView = (
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.target) {
           entry.target.classList.add(className);
+          // Important: Set opacity to 1 explicitly once in view
+          (entry.target as HTMLElement).style.opacity = '1';
+          // Stop observing after animation is triggered
+          observer.unobserve(entry.target);
         }
       });
     }, options);
@@ -66,6 +76,8 @@ export const useStaggerAnimation = (
               (el as HTMLElement).style.transform = 'translateY(0)';
             }, index * delay);
           });
+          // Stop observing after animation is triggered
+          observer.unobserve(entry.target);
         }
       });
     }, options);
