@@ -71,8 +71,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="animate-fade-in delay-300">
-            <div className="glass-card p-6 md:p-8 shadow-lg">
+          <div className="animate-fade-in delay-300 lg:ml-auto">
+            <div className="glass-card p-6 md:p-8 shadow-lg max-w-md mx-auto lg:mx-0">
               <div className="text-center mb-6">
                 <h3 className="text-xl font-bold mb-2">Download Brochure</h3>
                 <p className="text-muted-foreground">Get complete program details</p>
