@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { UserCircle2, Users, BriefcaseBusiness } from 'lucide-react';
+import { UserCircle2, Users, BriefcaseBusiness, Check } from 'lucide-react';
 
 const AudienceSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -46,7 +46,7 @@ const AudienceSection = () => {
     {
       icon: <BriefcaseBusiness className="h-10 w-10" />,
       title: 'Business Function Heads',
-      description: 'From marketing to operations, our AI training course provides tools to integrate AI into your department's workflow for maximum impact.',
+      description: 'From marketing to operations, our AI training course provides tools to integrate AI into your department\'s workflow for maximum impact.',
       roles: [
         'Vice Presidents',
         'Directors',
@@ -116,6 +116,3 @@ const AudienceSection = () => {
 };
 
 export default AudienceSection;
-
-// Import the Check icon at the top
-import { Check } from 'lucide-react';

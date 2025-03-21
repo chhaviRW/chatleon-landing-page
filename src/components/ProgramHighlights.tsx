@@ -49,7 +49,7 @@ const ProgramHighlights = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: 'In-Person Experience',
-      description: 'Join an exclusive 3-hour AI training workshop where you'll collaborate, network, and engage in immersive learning.'
+      description: 'Join an exclusive 3-hour AI training workshop where you\'ll collaborate, network, and engage in immersive learning.'
     },
     {
       icon: <Globe className="w-8 h-8" />,

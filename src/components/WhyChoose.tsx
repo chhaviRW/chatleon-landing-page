@@ -37,7 +37,7 @@ const WhyChoose = () => {
     {
       icon: <Users className="h-8 w-8" />,
       title: 'Designed for Business Leaders',
-      description: 'This isn't just another technical course. Our AI training for business leaders focuses on AI readiness, strategic frameworks, and business impact.'
+      description: 'This isn\'t just another technical course. Our AI training for business leaders focuses on AI readiness, strategic frameworks, and business impact.'
     },
     {
       icon: <Book className="h-8 w-8" />,
