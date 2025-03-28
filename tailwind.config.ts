@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
-				heading: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				heading: ['Playfair Display', 'serif'],
 				mono: ['SF Mono', 'monospace'],
 			},
 			colors: {
@@ -144,7 +144,7 @@ export default {
 			},
 			boxShadow: {
 				'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
-				'glass-intense': '0 4px 30px rgba(0, 0, 0, 0.15)',
+				'glass-intense': '0 8px 40px rgba(0, 0, 0, 0.2)',
 				'glass-light': '0 4px 20px rgba(0, 0, 0, 0.05)',
 				'neu': '20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff',
 				'neu-dark': '10px 10px 20px rgba(0, 0, 0, 0.1)',
@@ -152,7 +152,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-subtle': 'linear-gradient(to right, #f7f7f7, #ffffff)',
-				'gradient-blue': 'linear-gradient(135deg, #0061ff, #60efff)',
+				'gradient-blue': 'linear-gradient(135deg, #3b82f6, #2563eb)',
 				'gradient-purple': 'linear-gradient(135deg, #7e69ab, #9b87f5)',
 				'hero-pattern': 'radial-gradient(circle at 51% 44%, rgba(116, 116, 116, 0.05) 0%, rgba(116, 116, 116, 0.05) 25%, rgba(78, 78, 78, 0.05) 25%, rgba(78, 78, 78, 0.05) 50%, rgba(236, 236, 236, 0.05) 50%, rgba(236, 236, 236, 0.05) 75%, rgba(121, 121, 121, 0.05) 75%, rgba(121, 121, 121, 0.05) 100%), radial-gradient(circle at 76% 27%, rgba(18, 18, 18, 0.05) 0%, rgba(18, 18, 18, 0.05) 25%, rgba(188, 188, 188, 0.05) 25%, rgba(188, 188, 188, 0.05) 50%, rgba(143, 143, 143, 0.05) 50%, rgba(143, 143, 143, 0.05) 75%, rgba(77, 77, 77, 0.05) 75%, rgba(77, 77, 77, 0.05) 100%), linear-gradient(to right, #fafafa, #fafafa)',
 			},
