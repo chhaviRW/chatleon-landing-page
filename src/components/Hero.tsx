@@ -50,7 +50,7 @@ const Hero = () => {
               </p>
               
               <p className="text-lg md:text-xl text-muted-foreground">
-                Gain hands-on experience with the best AI course tailored for business leaders, explore AI tools and gain hands-on experience with AI and future AI-driven initiatives within your organization.
+                Gain hands-on experience with the best AI course tailored for business leaders. Explore AI tools and learn how to drive future AI initiatives within your organization.
               </p>
               
               <p className="text-xl font-medium">
