@@ -1,18 +1,19 @@
 
 import React, { useEffect } from 'react';
 import Hero from '@/components/Hero';
-import ProgramStats from '@/components/ProgramStats';
-import ClienteleSection from '@/components/ClienteleSection';
-import ProgramDetails from '@/components/ProgramDetails';
-import Challenges from '@/components/Challenges';
-import ProgramHighlights from '@/components/ProgramHighlights';
-import WhyChoose from '@/components/WhyChoose';
-import AudienceSection from '@/components/AudienceSection';
+import PainPoints from '@/components/PainPoints';
+import FeatureSection from '@/components/FeatureSection';
+import TestimonialSection from '@/components/TestimonialSection';
+import Results from '@/components/Results';
+import HowItWorks from '@/components/HowItWorks';
+import BusinessTypes from '@/components/BusinessTypes';
+import CTASection from '@/components/CTASection';
 import CountdownBar from '@/components/CountdownBar';
 
 const Index = () => {
-  // Set target date for countdown (April 10, 2025)
-  const targetDate = new Date('2025-04-10T23:59:59');
+  // Set target date for countdown (30 days from now)
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 30);
   
   // Smooth scroll for anchor links
   useEffect(() => {
@@ -49,13 +50,13 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
-        <ProgramStats />
-        <ClienteleSection />
-        <ProgramDetails />
-        <Challenges />
-        <ProgramHighlights />
-        <WhyChoose />
-        <AudienceSection />
+        <PainPoints />
+        <FeatureSection />
+        <Results />
+        <TestimonialSection />
+        <HowItWorks />
+        <BusinessTypes />
+        <CTASection />
       </main>
       
       <CountdownBar targetDate={targetDate} />
@@ -64,8 +65,8 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <p className="font-bold text-xl">RandomWalk</p>
-              <p className="text-sm opacity-75 mt-1">AI Training for Business Leaders</p>
+              <p className="font-bold text-xl">Chateleon</p>
+              <p className="text-sm opacity-75 mt-1">Your Website's 24/7 Revenue Assistant</p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -76,7 +77,7 @@ const Index = () => {
           </div>
           
           <div className="mt-8 pt-8 border-t border-gray-700 text-sm text-center opacity-75">
-            <p>© {new Date().getFullYear()} RandomWalk AI. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Chateleon. All rights reserved.</p>
           </div>
         </div>
       </footer>

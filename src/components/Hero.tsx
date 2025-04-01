@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Zap, Users, TrendingUp } from 'lucide-react';
 import LeadForm from './LeadForm';
 
 const Hero = () => {
@@ -38,43 +38,58 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={heroRef}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="stagger-animation">
-            <div className="pill-tag mb-6">AI - LEADERSHIP - TRAINING FOR BUSINESS GROWTH</div>
+            <div className="pill-tag mb-6">
+              <Zap className="h-3 w-3 mr-1" />
+              <span>B2B AI ENGAGEMENT SOLUTION</span>
+            </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-              AI - LEADERSHIP - TRAINING FOR BUSINESS GROWTH
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+              <span className="text-primary">Supercharge</span> Engagement. Capture <span className="text-primary">More</span> Leads. Drive <span className="text-primary">More</span> Sales.
             </h1>
             
             <div className="space-y-6 mb-8">
               <p className="text-lg md:text-xl text-muted-foreground">
-                Master AI strategy and implementation with executive AI training Program led by industry experts from RandomWalk.
+                Meet <span className="font-bold">Chateleon AI Agent</span> – Your Website's 24/7 Revenue Assistant
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground">
-                Gain hands-on experience with the best AI course tailored for business leaders. Explore AI tools and learn how to drive future AI initiatives within your organization.
-              </p>
+              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
+                <p className="text-base md:text-lg text-red-700">
+                  <span className="font-semibold">90% of business websites in India</span> are losing leads daily because of poor engagement.
+                </p>
+                <ul className="mt-2 space-y-1 text-red-600">
+                  <li className="flex items-center">
+                    <span className="mr-2">🚫</span> High bounce rates
+                  </li>
+                  <li className="flex items-center">
+                    <span className="mr-2">😵‍💫</span> Low interaction
+                  </li>
+                  <li className="flex items-center">
+                    <span className="mr-2">🛒</span> Abandoned carts
+                  </li>
+                </ul>
+                <p className="mt-2 font-bold text-red-700">Not anymore.</p>
+              </div>
               
-              <p className="text-xl font-medium">
-                Join our practical AI training course today.
+              <p className="text-lg">
+                Chateleon isn't just an animated mascot — it's a fully intelligent AI Agent that turns your traffic into paying customers, effortlessly.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:items-center mt-8">
-              <a href="#program" className="btn-primary">
-                <span>LEARN MORE</span>
+              <a href="#free-trial" className="btn-primary">
+                <span>🎁 Get 30-Day FREE Trial</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               
-              <a href="#register" className="btn-secondary">
-                Register Now
-              </a>
+              <span className="text-sm text-muted-foreground text-center sm:text-left">No Credit Card Required</span>
             </div>
           </div>
           
           <div className="animate-fade-in delay-300 lg:ml-auto">
             <div className="glass-card p-6 md:p-8 shadow-lg max-w-md mx-auto lg:mx-0">
               <div className="text-center mb-6">
-                <h3 className="text-xl font-bold mb-2">Download Brochure</h3>
-                <p className="text-muted-foreground">Get complete program details</p>
+                <h3 className="text-xl font-bold mb-2">Start Your Free Trial</h3>
+                <p className="text-muted-foreground">No credit card required</p>
               </div>
               
               <LeadForm />
