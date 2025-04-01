@@ -9,6 +9,8 @@ import HowItWorks from '@/components/HowItWorks';
 import BusinessTypes from '@/components/BusinessTypes';
 import CTASection from '@/components/CTASection';
 import CountdownBar from '@/components/CountdownBar';
+import TrustedBySection from '@/components/TrustedBySection';
+import ClienteleSection from '@/components/ClienteleSection';
 
 const Index = () => {
   // Set target date for countdown (30 days from now)
@@ -53,7 +55,9 @@ const Index = () => {
         <PainPoints />
         <FeatureSection />
         <Results />
+        <TrustedBySection />
         <TestimonialSection />
+        <ClienteleSection />
         <HowItWorks />
         <BusinessTypes />
         <CTASection />
