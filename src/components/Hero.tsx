@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              Skyrocket Your Website Sales with Chateleon Autonomous AI Agents
+              Skyrocket Your Website Sales by 85% with Chateleon Autonomous AI Agents
             </h1>
             
             <div className="space-y-6 mb-8">
