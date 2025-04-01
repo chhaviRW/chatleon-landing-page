@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight, Zap, Users, TrendingUp } from 'lucide-react';
 import LeadForm from './LeadForm';
@@ -44,30 +43,26 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              <span className="text-primary">Supercharge</span> Engagement. Capture <span className="text-primary">More</span> Leads. Drive <span className="text-primary">More</span> Sales.
+              Skyrocket Your Website Sales with Chateleon Autonomous AI Agents
             </h1>
             
             <div className="space-y-6 mb-8">
               <p className="text-lg md:text-xl text-muted-foreground">
-                Meet <span className="font-bold">Chateleon AI Agent</span> – Your Website's 24/7 Revenue Assistant
+                24/7 Revenue Generation for Your Website
               </p>
               
-              <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r">
-                <p className="text-base md:text-lg text-red-700">
-                  <span className="font-semibold">90% of business websites in India</span> are losing leads daily because of poor engagement.
-                </p>
-                <ul className="mt-2 space-y-1 text-red-600">
+              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                <ul className="space-y-2 text-green-700">
                   <li className="flex items-center">
-                    <span className="mr-2">🚫</span> High bounce rates
+                    <span className="mr-2">📊</span> 75% Businesses Reduced Bounce Rates
                   </li>
                   <li className="flex items-center">
-                    <span className="mr-2">😵‍💫</span> Low interaction
+                    <span className="mr-2">🚀</span> 10X Increase in Website Traffic
                   </li>
                   <li className="flex items-center">
-                    <span className="mr-2">🛒</span> Abandoned carts
+                    <span className="mr-2">✅</span> 99/100 People Filling Contact Forms
                   </li>
                 </ul>
-                <p className="mt-2 font-bold text-red-700">Not anymore.</p>
               </div>
               
               <p className="text-lg">
